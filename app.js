@@ -85,7 +85,7 @@ var testArray = [2,3,4]; //eslint-disable-line
 function sumArray(testArray){ //eslint-disable-line
   var sum1 = sum(testArray[0],testArray[1]);
   var sum2 = sum(sum1,testArray[2]);
-  var message = '2,3,4 was passed in as an array of numbers, and ' + sum2 + ' is their sum.';
+  var message = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + sum2 + ' is their sum.';
   return [sum2,message];
 }
 
@@ -106,7 +106,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  var product1 = multiply(testArray[0],testArray[1]);
+  var product2 = multiply(product1, testArray[2]);
+  var message = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + product2 + '.';
+  return [product2,message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
